@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snack guide</title>
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/onsenui/css/onsen-css-components.min.css"
+    />
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <script type="text/javascript" src="/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <ons-navigator
+      id="myNavigator"
+      swipeable
+      animation="fade"
+      page="home.html"
+    ></ons-navigator>
+
+    <template id="home.html">
+      <ons-page id="home">
+        <ons-toolbar class="header">
+          <div class="header center">Snack guide</div>
+        </ons-toolbar>
+        <ons-list>
+          <ons-list-item id="goabout" tappable>About</ons-list-item>
+          <ons-list-item id="gog1" tappable>"Lill-lördag"</ons-list-item>
+          <ons-list-item id="gog2" tappable>The weekend guide</ons-list-item>
+          <ons-list-item id="gog3" tappable>The Holy Guide</ons-list-item>
+        </ons-list>
+      </ons-page>
+    </template>
+
+    <template id="about.html">
+      <ons-page id="about">
+        <ons-toolbar class="header">
+          <div class="left">
+            <ons-back-button>Back</ons-back-button>
+          </div>
+        </ons-toolbar>
+        <div class="content">
+          <ons-card class="card">
+            <div class="title">About</div>
+            <div class="content">This is a snack guide built with the help of Onsen UI. Maker is Josephine Kvarnberg.</div>
+          </ons-card>
+        </div>
+      </ons-page>
+    </template>
+
+    <template id="g1.html">
+      <ons-page id="g1">
+        <ons-toolbar class="header">
+          <div class="center">"Lill-lördag"</div>
+          <div class="left">
+            <ons-back-button>Back</ons-back-button>
+          </div>
+        </ons-toolbar>
+        <ons-card class="card"> 
+          <div class="title">What to snack on when it's a wednesday and you are already tired of
+            this mf week.</div>
+        </ons-card>
+        <ons-card class="card">
+          <div class="chipchip">
+            <img 
+              src="https://www.estrella.se/assets/uploads/2017/09/mini-linschips-dill-graslok-110g_r1-446x707.png" >
+            </img>
+          <div class="title">Lentil chips</div>
+          <div class="content">Gotta keep it balanced. These make you feel like you atleast tried to eat healthier.</div>
+          </div>
+        </ons-card>
+      </ons-page>
+    </template>
+
+    <template id="g2.html">
+      <ons-page id="g2">
+        <ons-toolbar class="header">
+          <div class="left">
+            <ons-back-button>Back</ons-back-button>
+          </div>
+        </ons-toolbar>
+        <ons-card class="card">
+          <div class="title">Special days call for special snacks. Celebrate that you overcame
+                this week with some chippy and dippy, or other.</div>
+        </ons-card>
+        <ons-card class="card">
+          <div class="chipchip">
+            <img 
+            src="https://www.estrella.se/assets/uploads/2016/01/10666-7314-estrella-chp-salt-vinegar-275g_r2-446x741.png" >
+            </img>
+            <div class="title">Salt and vinegar</div>
+            <div class="content">These acidic chips are perfect to dip and elegantly burns away the bitterness of all your failures.</div>
+          </div>
+        </ons-card>
+      </ons-page>
+    </template>
+
+    <template id="g3.html">
+      <ons-page id="g3">
+        <ons-toolbar class="header">
+          <div class="left">
+            <ons-back-button>Back</ons-back-button>
+          </div>
+        </ons-toolbar>
+        <ons-card class="card">
+          <div class="title">Just snacks for everyday, cause you snack every damn day tbh.</div>
+        </ons-card>
+        <ons-card class="card">
+          <div class="chipchip">
+            <img src="https://www.estrella.se/assets/uploads/2016/09/estrella-micropop-smor-3x80g-185x250.png"></img>
+            <h3>Extra big butter popcorn</h3>
+            <p>Kinda self explanatory. Popcorn is fast and cheap, perfect for snacking everyday.</p>
+          </div>
+        </ons-card>
+      </ons-page>
+    </template>
+  </body>
+</html>
